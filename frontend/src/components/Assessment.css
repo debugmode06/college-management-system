@@ -1,0 +1,199 @@
+.assessment-container {
+  font-family: 'Inter', sans-serif;
+  background: #f7f8fa;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* Gradient Header */
+.assessment-header .assessment-gradient {
+  background: linear-gradient(90deg, #4f46e5 5%, #6366f1 90%);
+  color: #fff;
+  border-radius: 17px;
+  padding: 2rem 2rem 1.3rem 2rem;
+  margin: 42px 34px 26px 34px;
+  box-shadow: 0 4px 20px #6366f166;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.assessment-header h1 { margin: 0; font-size: 2.13rem; font-weight: 800;}
+.assessment-header span { font-size: 1.06rem; color: #e0e6fd; margin-top: 7px;}
+.assessment-status { display: flex; gap: 2.3rem; margin-top: 11px; font-size: 1.01rem; font-weight:600; }
+
+.assessment-quick-actions {
+  display: flex;
+  gap: 1.6rem;
+  margin: 0 34px 20px 34px;
+}
+.action-card {
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 10px #3c509025;
+  padding: 1.1rem 1.35rem;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.18s;
+}
+.action-card:hover { box-shadow: 0 4px 13px #6366f170;}
+.action-icon {
+  width: 38px; height: 38px; border-radius: 9px;
+  background: #eef2ff; display: flex;
+  align-items: center; justify-content: center; margin-bottom: 8px;
+}
+.action-icon.upload { background: #eef2ff; color:#2563eb; }
+.action-icon.grades { background: #f3e8ff; color:#9333ea; }
+.action-icon.feedback { background: #e0fbea; color:#22c55e; }
+.action-icon.due { background: #fef9c3; color:#f59e1e; }
+.action-card h3 { margin: 6px 0 2px 0; font-size:1.08rem;}
+.action-card p { margin: 0; color: #888; font-size: 0.99rem; }
+
+/* Main grid layout */
+.assessment-main {
+  display: flex;
+  gap: 2.2rem;
+  margin: 0 34px 18px 34px;
+}
+.submission-section {
+  flex: 2.3;
+}
+.submission-section h2 {
+  font-size: 1.13rem;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.submission-card {
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 5px 12px #2563eb17;
+  padding: 1.6rem 1.7rem 1.2rem 1.7rem;
+  margin-bottom: 11px;
+  position: relative;
+  min-width: 390px;
+}
+.new-submission-btn {
+  position: absolute; right: 18px; top: 18px;
+  background: linear-gradient(90deg,#2563eb 60%,#7c3aed 100%);
+  color: white; border-radius: 9px; border: none;
+  padding: 9px 19px; font-weight: 600; font-size: 1.05rem;
+  box-shadow: 0 2px 8px #6366f160;
+  cursor: pointer;
+}
+.dropzone {
+  border: 2px dotted #a5b4fc;
+  border-radius: 11px;
+  padding: 2rem 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  background: #f8fafc;
+  color: #222;
+}
+.drop-icon { font-size: 2.4rem; color: #2563eb; margin-bottom: 13px;}
+.choose-files-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 9px 17px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow:0 1px 7px #2563eb3a;
+}
+.submission-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px 16px;
+  align-items: baseline;
+  margin-top: 8px;
+}
+.submission-fields select, .submission-fields input {
+  background: #f3f4f6;
+  border-radius: 7px;
+  border: 1px solid #e5e7eb;
+  padding: 9px 14px;
+  font-size: 1rem;
+  margin-bottom: 7px;
+  min-width: 165px;
+  font-family: inherit;
+}
+.submit-assignment-btn {
+  background: linear-gradient(90deg,#2563eb 50%,#7c3aed 100%);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 29px;
+  font-weight: bold;
+  font-size: 1.04rem;
+  cursor: pointer;
+  box-shadow:0 2px 9px #6366f155;
+}
+
+/* Sidebar */
+.assessment-sidebar {
+  flex: 1;
+  min-width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.sidebar-card {
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 10px #3c509026;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  margin-bottom: 9px;
+}
+.sidebar-card h3 {
+  font-size: 1.035rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #124;
+}
+.sidebar-card ul { list-style: none; padding: 0; margin: 0;}
+.deadline-red { background: #fee2e2; color: #b91c1c; border-radius: 7px; padding: 3px 10px; margin-bottom: 7px;}
+.deadline-yellow { background: #fef9c3; color: #92400e; border-radius: 7px; padding: 3px 10px; margin-bottom: 7px;}
+.deadline-blue { background: #e0f2fe; color: #2563eb; border-radius: 7px; padding: 3px 10px; margin-bottom: 7px;}
+.grade-gpa { font-weight: bold; color: #22c55e; margin-left: 7px;}
+.grade-num { font-weight: 600; color: #6366f1; margin-left: 7px;}
+.grade-score { font-weight: 600; color: #2563eb; margin-left: 7px;}
+.progress-bar {
+  height: 7px; background: #e5e7eb; border-radius: 7px; margin: 9px 0 13px 0; width: 100%; overflow: hidden;
+}
+.progress-bar > div { height: 100%; background: linear-gradient(90deg,#2563eb 10%,#22c55e 100%); border-radius: 7px;}
+
+.analytics-summary { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 1rem;}
+.analytics-summary span b { color: #2563eb;}
+.analytics-graph {
+  height: 49px;
+  background: linear-gradient(90deg,#6366f1 15%,#dbeafe 100%);
+  border-radius: 11px;
+  margin-top: 9px;
+}
+
+/* Recent Submissions */
+.assessment-recent {
+  margin: 9px 34px 0 34px;
+}
+.assessment-recent h2 {
+  font-size: 1.09rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.recent-card {
+  background: #eafbea;
+  padding: 0.61rem 1rem;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+.recent-title { font-weight: 600;}
+.recent-grade { background: #34d399; color: #065f46; border-radius: 7px; padding: 4px 11px;}
+ul, li { margin: 0; padding: 0; list-style: none; }

@@ -1,0 +1,80 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #93b9e0;
+    margin: 0;
+}
+.dashboard-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+.welcome-box {
+    background: linear-gradient(90deg,#4666f6 40%,#7f54e9 100%);
+    color: #e7dede;
+    border-radius: 18px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.quick-actions {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.quick-actions > div {
+    background: #2e2d2d;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.academic-overview, .document-storage, .security-status {
+    background: #c20d0d;
+    border-radius: 10px;
+    padding: 1.3rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+.navbar {
+    background: #b0a9a9;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links a {
+    color: #4666f6;
+    margin-left: 1.8rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Add to index.css or as inline in your login form */
+.login-form {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 3rem auto;
+  box-shadow: 0 8px 32px rgba(127,84,233,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.login-form h2 {
+  text-align: center;
+  color: #7f54e9;
+}
+.login-form input, .login-form button {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #dde1f2;
+}
+.login-form button {
+  background: #4666f6;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}

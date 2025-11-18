@@ -1,0 +1,9 @@
+import React from "react";
+export default function FacultyDashboard() {
+  return (
+    <div>
+      <h1>Faculty Dashboard</h1>
+      <p>Welcome to your dashboard!</p>
+    </div>
+  );
+}
